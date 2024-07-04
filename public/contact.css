@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4A249D; /* Ensure this matches the desired purple color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; /* Set text color to contrast with background */
+}
+
+/* header {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#36ba98;  */
+    /* background-color: #50c878; */
+    /* background-color: #31cd89; */
+    background-color: #F1f1f1;
+    padding: 10px 20px;
+    height: 80px;
+    z-index: 10
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    
+width: 100px;
+    height: 70px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* This will push the menu to the right */
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color:black;
+   text-decoration: none;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 16px;
+    font-size: 25px;
+    display: block;
+}
+
+
+.navbar-menu a:hover {
+    background-color:#575757;
+    border-radius: 4px;
+}
+
+.navbar-menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar-menu .btnLogin-popup{
+    width:130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar-menu .btnLogin-popup:hover{
+    background: #575757;
+
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-content h3, .footer-content p {
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    /* margin-bottom: 20px; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* padding: 20px; */
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 10px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    align-items:center;
+}
+
+.container {
+    max-width:1200px;
+    /* margin: 0 auto; */
+    background-color: #4A249D;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin-bottom: 20px; */
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+    /* margin-bottom: 30px; */
+}
+.top{
+    background-color: #4A249D;
+    /* margin-bottom: 20px; */
+    height: 750px;
+}
+.col{
+    font-size: 25px;
+}
+.img{
+  height: auto;
+  width: 80px;
+  padding: 0;
+}
