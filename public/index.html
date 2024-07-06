@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Right-Aligned Links</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="https://www.vidyamandir.com/Think-IIT-Think-VMC/assets/images/iit/iit-dharwad.png" alt="Brand Logo" class="navbar-logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top">
+        <div class="top-total">
+            <div class="top-left">
+                <p><h1>READ today to be READY tomorrow.</h1></p>
+                <p>IIT Dharwad Library - where place meets possibilities.</p>
+            </div>
+            <div class="top-right">
+                <img src="/asset-1.png" class="top-img">
+            </div>
+        </div>
+    </section>
+    <section class="full">
+        <section class="background-section">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p id="head" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Welcome to IIT Dharwad Library</p>
+                    <p id="para" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Please login with your credentials.</p>
+                </div>
+                <div class="login-form">
+                    <form action="/login" method="POST">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit" class="btn" id="but">Login</button>
+                    </form>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="register.html" class="register-link">Register</a></p>
+                    </div>
+                </div>
+                <p id="error-message"></p>
+            </div>
+        </section>
+        <div class="search-container">
+            <div class="search-box">
+                <p>Search for a book by:</p>
+                <div class="search-fields">
+                    <select id="search-category">
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                        <option value="genre">Genre</option>
+                    </select>
+                    <input type="text" id="search-value" placeholder="Enter search term">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+        <section class="info-section">
+            <div class="scrollspy-container">
+                <h2>Announcements</h2>
+                <div class="scrollspy-content">
+                    <!-- Add your announcements content here -->
+                    <ol>
+                        <li>Working hours updated: Monday to Friday. Timings: 0900 to 1800 hrs.</li>
+                        <li>Default Password for OPAC Login has been shared through email. If not received, request you to consult the Library Staff or email us at librarian@iitdh.ac.in.</li>
+                        <li>Request you to reset OPAC password immediately after successful login using the default password.</li>
+                        <li>Request to 2018/19/20 Batch Students to return books to the library purchased under reimbursement policy.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="full-width-box">
+                <a href="arrival.html" class="new"><h2>New Arrivals</h2></a>
+                <!-- Add your new arrivals content here -->
+                <br>
+                <p>Check out the latest books added to our library.</p>
+                <p>New books out every week.</p>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', () => {
+            const category = document.getElementById('search-category').value;
+            const value = document.getElementById('search-value').value;
+            const emailInput = document.querySelector('input[name="email"]');
+            const email = emailInput ? emailInput.value : ''; // Get the email from the login form if available
+            window.location.href = `/search.html?category=${encodeURIComponent(category)}&value=${encodeURIComponent(value)}&email=${encodeURIComponent(email)}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <h1>Contact Us</h1>
+            <p>Email: librarian@iitdh.ac.in</p>
+            <p>Phone: (0836) 221 2824</p>
+            <p>Address: IIT Dharwad, Chikkamalligwad, Karnataka-560007</p>
+            <br> <p style="font-family: Arial, Helvetica, sans-serif;">Copyrights &#169 2024 IIT Dharwad Central Library. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
