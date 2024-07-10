@@ -1,0 +1,491 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#36ba98;  */
+    /* background-color: #50c878; */
+    /* background-color: #31cd89; */
+    background-color: #F1f1f1;
+    padding: 10px 20px;
+    height: 80px;
+    z-index: 10
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    
+width: 100px;
+    height: 70px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* This will push the menu to the right */
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color:black;
+   text-decoration: none;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 16px;
+    font-size: 25px;
+    display: block;
+}
+
+
+.navbar-menu a:hover {
+    background-color:#575757;
+    border-radius: 4px;
+}
+
+.navbar-menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.navbar-menu li a:hover {
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar-menu .btnLogin-popup{
+    width:130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar-menu .btnLogin-popup:hover{
+    background: #575757;
+
+}
+
+.form-box h2{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height:100px;
+    /*border-bottom: 2px solid black;*/
+    margin: 30px 0;
+}
+
+.login-register{
+    font-size: 0.9em;
+    color:black;
+    text-align: center;
+    margin: 25px;
+
+}
+
+.login-register p a{
+    color:black;
+
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.25); /* Optional: semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    height: 150px;
+    
+   
+}
+
+.login-register{
+    color: white;
+    font-size: 20px;
+}
+.login-register p {
+    color: white; /* Color of the paragraph text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-register .register-link {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Color of the Register link */
+    text-decoration: none; /* Remove underline */
+}
+
+.login-register .register-link:hover {
+    color: #ff9900; /* Color of the Register link on hover */
+}
+
+.login-form input {
+    padding: 20px;
+    margin: 5px 0;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-form button {
+    /* padding: 10px 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin: 5px 120px; */
+    
+    border: none;
+    border-radius: 4px;
+    background-color: #6B8A7A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    cursor: pointer;
+}
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+.login-form button:hover {
+    background-color: #444;
+}
+
+
+#but{
+    /* margin: 5px 0; */
+    height: 52px;
+    /* padding-left: 10px; */
+    /* margin: 5px 120px; */
+    border: none;
+    border-radius: 4px;
+    background-color: #4A249D;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+#but:hover {
+    background-color: #444;
+}
+
+.background-section {
+    /* height: 320px; */
+    /* background-image: url('https://image.architonic.com/pro2-3/20092255/herringbone-oak-ab-dim-white-sample-pro-b-arcit18.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0,0.8);
+    display: flex;
+    color: white;
+   flex-direction: column-reverse;
+    align-items:center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+    /* height: 800px; */
+    padding: 20px;
+}
+
+/* .full {
+    background-image: url('https://image.architonic.com/pro2-3/20092255/herringbone-oak-ab-dim-white-sample-pro-b-arcit18.jpg'); /* Update the path to your image 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust this height as needed 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+
+.full::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0,); Optional: Adds a dark overlay for better text visibility */
+    z-index: 1;
+}
+
+/* .content-wrapper {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* Ensures the text is readable over the background 
+} */
+
+
+/*.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.1); /* Optional: semi-transparent background 
+    padding: 20px;
+    border-radius: 8px;
+}*/
+
+.text-content {
+    flex: 1;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.text-content h1, .text-content p {
+    margin: 0;
+}
+
+#head{
+    font-size: 40px;
+}
+
+#para{
+    font-size: 25px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-content h3, .footer-content p {
+    margin: 5px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: #f1f1f1;
+}
+
+.search-box {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 25px;
+    padding: 20px;
+    /* border: 3px solid black; */
+    /* border-radius: 8px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 600px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 30px;
+}
+
+.search-box p {
+    margin: 0 0 10px;
+}
+
+.search-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+#search-category {
+   
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    width: 30%;  /* Adjust this percentage to control the width of the select box */
+}
+
+#search-value {
+    height: 40px;
+    margin-left: 10px;
+    border: 2px solid black;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    border-radius: 4px;
+    width: 65%;  /* Adjust this percentage to control the width of the input box */
+}
+
+#search-button {
+   
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40%;
+}
+
+#search-button:hover {
+    background-color: #4A249D;
+    color: white;
+
+}
+
+.info-section {
+    display: flex;
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+    margin-bottom: 30px;
+    justify-content: space-between;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 250px;
+    
+}
+
+.scrollspy-container {
+    flex: 3;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* border: 2px solid black; */
+    /* background-color: rgb(74, 36, 157,0.2); */
+    background-color: rgb(74, 36, 157);
+    color: white;
+    /* background-image: url('https://image.architonic.com/pro2-3/20092255/herringbone-oak-ab-dim-white-sample-pro-b-arcit18.jpg'); */
+    background-size: cover;
+    padding: 8px;
+    font-size: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+}
+.scrollspy-container h2 {
+ text-align: center;
+}
+
+.scrollspy-content {
+    height: 100%;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.full-width-box {
+    flex: 2;
+    background-color: rgb(74, 36, 157);
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 19px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    text-align: center;
+    color: white; /* Set text color to black */
+    height: 200px;
+}
+
+.full-width-box a.new {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Set link color to black */
+}
+
+.full-width-box a.new h2 {
+    margin: 0;
+}
+
+.full-width-box p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top{
+    height: 580px;
+ /* background-color: #31cd89; */
+    /* background-color: #50c878; */
+    background-color: #4A249D;
+    /* background-color: #26355D; */
+    display: flex;
+    justify-content: space-between;
+}
+.top-left{
+    padding-top: 00px;
+    padding-left: 80px;
+    width: 60%;
+    color: white;
+    font-size: 21px;
+    align-items: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top-total {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Optional: Adds space between the text and image */
+}
+.top-right {
+    flex: 1; /* Allows the image section to take available space */
+    display: flex;
+    width: 40%;
+    justify-content: center; /* Centers the image horizontally */
+}
+
+.top-img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
